@@ -21,23 +21,9 @@
 
 (function (window) {
   var byeSpeaker = {};
-  var names = [
-    "Yaakov",
-    "John",
-    "Jen",
-    "Jason",
-    "Paul",
-    "Frank",
-    "Larry",
-    "Paula",
-    "Laura",
-    "Jim",
-  ];
   var speakWord = "Good Bye";
-  byeSpeaker.speak = function () {
-    for (var i = 0; i < names.length; i++) {
-      console.log(speakWord + " " + names[i]);
-    }
+  byeSpeaker.speak = function speak(name) {
+    console.log(speakWord + " " + name);
   };
   window.byeSpeaker = byeSpeaker;
 })(window);
